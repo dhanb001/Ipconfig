@@ -53,7 +53,7 @@ class Book {
 	 * and directly compares them.
 	 *  @param o A book object to be compared
 	 */
-	boolean equals(Book o) {
+	/*boolean equals(Book o) {
 		
 		/* If a value does not match, status will be set to false
 		 *  otherwise, default to true
@@ -94,7 +94,7 @@ class Book {
 		
 		
 		return status; //Return status
-	}
+	}*/
 	
 
 	/** Returns the title of associated Book object
