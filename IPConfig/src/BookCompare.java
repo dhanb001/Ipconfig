@@ -43,42 +43,9 @@ class Book {
 		
 		///END CONSTRUCTOR
 	}
-	
-	///UNNECESSARY METHOD
-	/*boolean equals(Book o) {
-		
 
-		boolean status = true;
-		
-		//Check if titles are the same
-		if (this.title.equals(o.getTitle())==false) { 
-			System.out.println("Titles do not match:\t\t" //Print error message
-			+ this.title + " does not equal " + o.getTitle());
-			
-			status = false; //Set status as false, otherwise remain true
-		}
-		
-		
-		//Check if authors are the same
-		if (this.author.equals(o.getAuthor())==false) { 
-			System.out.println("Authors do not match:\t\t" //Print error message
-			+ this.author + " does not equal " + o.getAuthor());
-			
-			status = false; //Set status as false, otherwise remain true
-		}
-		
-		//Check if page counts are the same
-		if (this.getNumPages()!=o.getNumPages()) {
-			System.out.println("Page Counts do not match:\t" //Print error message
-			+ this.getNumPages() + " does not equal " + o.getNumPages());
-			
-			status = false; //Set status as false, otherwise remain true
-		}
-		
-		
-		return status; //Return status
-	}
-	*/
+	///Getter Methods
+	
 
 	/** Returns the title of associated Book object
 	 * 
@@ -98,10 +65,33 @@ class Book {
 	
 	/** Returns the number of pages in the associated Book object
 	 * 
-	 * @return Integer-numPages of Book
+	 * @return Integer representation of pages in book
 	 */
 	int getNumPages() {
 		return numPages;
+	}
+	
+	/** Takes a String parameter and sets a new title for the Book object
+	 * 
+	 * @param nextTitle The String that will become the new title
+	 */
+	void setTitle(String newTitle) {
+		this.title = newTitle; //Replaces current title with parameter
+	}
+	
+	/** Takes a String parameter and sets a new author for the Book object
+	 * 
+	 * @param nextTitle The String that will become the new author
+	 */
+	void setAuthor(String newAuthor) {
+		this.author = newAuthor; //Replaces current author with parameter
+	}
+	/** Takes an integer parameter and sets a new number of pages for the Book object
+	 * 
+	 * @param newPages The integer value that will become the new number of pages
+	 */
+	void setNumPages(int newPages) {
+		this.numPages = newPages; //Replaces current number of pages with parameter
 	}
 	
 
@@ -110,8 +100,7 @@ class Book {
 	 * <p>
 	 * The values that will be printed are as follows:
 	 * <p>Name + Author + Page Count 
-	 * 
-	 * 
+	 * @return String representation of a book object
 	 */
 	@Override
 	public String toString() {
@@ -186,12 +175,12 @@ class BookCompare {
 		System.out.println("In this program, we will demonstrate instance comparison"
 				+ " by reference and by value.\nThis will be accomplished using an "
 				+ "arbitrary book object.\n\nBook objects have three private data values:\n"
-				+ "1)String->title (The title of the book)\n"
-				+ "2)String->author (The author of the book)\n"
-				+ "3)Int->numPages (The number of pages in the book)\n");
+				+ "1)String title   (The title of the book)\n"
+				+ "2)String author  (The author of the book)\n"
+				+ "3)Int numPages   (The number of pages in the book)\n");
 		
 		System.out.println("First, we must create three book objects.\n"
-				+ "There will be three books. The first two books will have the same values.\n"
+				+ "The first two books will have the same values.\n"
 				+ "The third book will have different values from the first two.\n");
 		
 		System.out.println("The values of the created books will be printed below.\n"
@@ -217,6 +206,47 @@ class BookCompare {
 		System.out.println("Result = " +firstBook.equals(secondBook) + "<-"
 				+ "(Output from the Book equals() method)\n");
 		
+		System.out.println("We will now demonstrate that the equals() method"
+				+ " within Book can actually detect mistakes.\n"
+				+ "To do so, we will compare the first book to the third book.\n"
+				+ "This will help demonstrate the validity of the overloaded method.\n");
+		
+		System.out.println("Book one:\n"+firstBook + "\n");
+		System.out.println("Book three:\n"+thirdBook + "\n");
+		
+		System.out.println("Result = "+firstBook.equals(thirdBook) + "<-"
+				+ "(Output from the Book equals() method)\n");
+		
+		System.out.println("In order to save space, and to test all of the checks, "
+				+ "we will change the title of Book 3 to match Book 1 and then check for equality.\n");
+		
+		thirdBook.setTitle("Java"); ///Change the title of Book 3 to match Book 1
+		
+		System.out.println("Book three:\n"+thirdBook + "\n");
+		
+		System.out.println("Now we will compare the first book to the third book again."
+				+ "This time the titles will be equal, but the other values will differ.\n");
+		
+		System.out.println("Result = "+firstBook.equals(thirdBook) + "<-"
+				+ "(Output from the Book equals() method)\n");
+		
+		System.out.println("As you can see, we successfully compared the titles, only receiving an error statement for the authors.\n"
+				+ "Now to ensure maximum utilization of the equals method, we will change the authors to match, "
+				+ "leaving only the number of pages as a differing value.\n");
+		
+		thirdBook.setAuthor("Oracle"); ///Change the author of Book 3 to match Book 1
+		
+		System.out.println("Book three:\n"+thirdBook + "\n");
+		
+		System.out.println("Now we will compare the first book to the third book for a final time."
+				+ "This time the titles and the authors will be equal.\n");
+		
+		System.out.println("Result = "+firstBook.equals(thirdBook) + "<-"
+				+ "(Output from the Book equals() method)\n"); 
+		
+		System.out.println("Now that we have proven the validity of our overloaded equals() method,"
+				+ "we can now move on to comparison by reference.\n\n");
+		
 		System.out.println("Now that we have compared two instances of our class by value, "
 				+ "let's try comparing two identical instances by Reference instead.\n"
 				+ "In order to compare by reference, the == operator will be used.\n"
@@ -237,15 +267,8 @@ class BookCompare {
 				+ "have the same values, they don't point to the same memory address.\n"
 				+ "Therefore comparing by reference isn't useful when comparing unique objects.");
 		
-		System.out.println("We will now demonstrate that the equals() method"
-				+ " within Book can actually detect mistakes.\n"
-				+ "To do so, we will compare the first book to the third book.\n"
-				+ "This will help demonstrate the validity of the overloaded method.\n");
 		
-		System.out.println("Result = "+firstBook.equals(thirdBook) + "<-"
-				+ "(Output from the Book equals() method)\n");
-		
-		System.out.println("Lastly, we will demonstrate the usefulness of comparison by reference.\n"
+		System.out.println("Now, we will demonstrate when comparison by reference is useful.\n"
 				+ "Comparing by reference is useful if two objects point to the same memory location.\n"
 				+ "This will be demonstrated by making a fourth book, and making it equal the first book.\n");
 		
