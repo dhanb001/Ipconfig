@@ -28,9 +28,21 @@ interface Shape {
 	 * This function will return the double representation of the area
 	 */
 	double getArea();
+	
+	/**
+	 * Compares two shapes, outputting the higher area
+	 * @param rhs Shape object being compared to.
+	 */
+	void compareArea(Shape rhs);
+	
+	/**
+	 * Compares two shapes, outputting the higher perimeter
+	 * @param rhs Shape object being compared to.
+	 */
+	void comparePerimeter(Shape rhs);
 
-	/**This function will overload the default toString method, allowing shape data to be printed directly to console
-	 * 
+	/**
+	 * Overloads default toString method, allowing shape to be printed directly
 	 * @return String representation of a shape
 	 */
 	String toString();
