@@ -14,9 +14,20 @@ class Book {
 		
 	//Declaration of private Book Variables
 	
-	private String title, author; //Declares book string variables, title and author
+	/**
+	 * String representation of book's title
+	 */
+	private String title;
 	
-	private int numPages; //Number of pages in book
+	/**
+	 * String representation of book's author
+	 */
+	private String author; 
+	
+	/**
+	 * Number of pages in book
+	 */
+	private int numPages;
 		
 
 	
