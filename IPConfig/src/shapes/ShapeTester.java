@@ -178,8 +178,23 @@ public class ShapeTester {
 		
 		Circle1.comparePerimeter(Square1); //COMPARE PERIMETER OF CIRCLE TO PERIMETER OF SQUARE
 		*/
+		System.out.println("==========================SUMMARY==========================");
+		System.out.println("In this package, we created a shape interface, "
+				+ "we then used that interface to create 3 shapes: Rectangle, Square, and Circle.\n"
+				+ "Then we used the compareArea and comparePerimeter methods "
+				+ "declared in the shape interface to compare "
+				+ "different shape objects.\n");
+		System.out.println("The compareArea and comparePerimeter functions worked "
+				+ "regardless of the shape invoking them, demonstrating Polymorphism from Shape.\n\n");
 		
-		System.out.println("CONCLUSION NEEDED, FINISH TOMORROW! GOOD WORK TODAY!");
+
+		System.out.println(">>>>>>Please SCROLL TO THE BEGINNING of the output in the console "
+				+ "for a step by step demonstration.<<<<<<");
+		System.out.println("NOTE:\tThe ShapeTester class only demonstrates through output, "
+				+ "it does not contain relevant methods.\n"
+				+ "\tThe other classes in the SHAPE package will show you the actual code.");
+
+		//END DRIVER AND DEMONSTRATION
 	}
 
 }
