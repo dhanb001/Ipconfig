@@ -4,7 +4,7 @@ package shapes;
  * <p>
  * It is not declared as public to ensure that it can only be accessed by package members.
  * <p>
- * It includes several methods, such as calculatePerimeter(), calculateArea(), and toString()
+ * It includes several methods that will be used in the shapes that implement it.
  * @author Dalton
  *
  */
@@ -17,33 +17,60 @@ interface Shape {
 	 */
 	final double pi = 3.1415; 
 	
-	/**This function is responsible for retrieving the perimeter of the given shape
+	/**This function is responsible for retrieving the perimeter of the given shape.
 	 * <p>
-	 * This function will return the double representation of the perimeter
+	 * This function will return the double representation of the perimeter.
 	 */
 	double getPerimeter();
 	
-	/**This function is responsible for retrieving the area of the given shape
+	/**This function is responsible for retrieving the area of the given shape.
 	 * <p>
-	 * This function will return the double representation of the area
+	 * This function will return the double representation of the area.
 	 */
 	double getArea();
 	
 	/**
-	 * Compares two shapes, outputting the higher area
-	 * @param rhs Shape object being compared to.
+	 * This function returns the type of shape the particular object is.
+	 * <p>
+	 * Ex: "Circle" will be returned for the Circle class, "Square" for Square, etc.
+	 * @return A string representation of the type of shape the object is
 	 */
-	void compareArea(Shape rhs);
+	String getType();
 	
-	/**
-	 * Compares two shapes, outputting the higher perimeter
-	 * @param rhs Shape object being compared to.
-	 */
-	void comparePerimeter(Shape rhs);
 
+	
 	/**
 	 * Overloads default toString method, allowing shape to be printed directly
 	 * @return String representation of a shape
 	 */
 	String toString();
+	
+	
+	/*
+	 * ============================================================================
+	 * COMPARISON METHODS: These are responsible for showing POLYMORPHISM
+	 * These methods will allow two DIFFERENT shapes to be compared to one another.
+	 * compareArea and comparePerimeter will accomplish this goal.
+	 * ============================================================================
+	 */
+	
+	/**
+	 * Compares two shapes, outputting the higher area.
+	 * @param rhs Shape object being compared to.
+	 */
+	void compareArea(Shape rhs);
+	
+	/**
+	 * Compares two shapes, outputting the higher perimeter.
+	 * @param rhs Shape object being compared to.
+	 */
+	void comparePerimeter(Shape rhs);
+
+	/*
+	 * ============================================================================
+	 * END COMPARISON METHODS
+	 * Again, these two methods will be responsible for showing Polymorphism.
+	 *============================================================================
+	 */
+	
 }

@@ -35,11 +35,9 @@ class Book {
 	 * <p>
 	 * This constructor takes the following data parameters and creates a book object
 	 * 
-	 * 
-	 * 
-	 * @param bookTitle
-	 * @param bookAuthor 
-	 * @param pageNum 
+	 * @param bookTitle Parameter for the title of the book
+	 * @param bookAuthor Parameter for the author of the book
+	 * @param pageNum Parameter for the number of pages found in the book
 	 * 
 	 */
 	
@@ -55,12 +53,12 @@ class Book {
 		///END CONSTRUCTOR
 	}
 
-	///Getter Methods
+	///GETTER METHODS
 	
 
 	/** Returns the title of associated Book object
 	 * 
-	 * @return String-title of Book
+	 * @return (String) Title of Book
 	 */
 	String getTitle() {
 		return title;
@@ -68,7 +66,7 @@ class Book {
 	
 	/** Returns the author of associated Book object
 	 * 
-	 * @return String-author of Book
+	 * @return (String) Author of Book
 	 */
 	String getAuthor() {
 		return author;
