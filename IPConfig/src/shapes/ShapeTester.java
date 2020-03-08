@@ -40,7 +40,7 @@ public class ShapeTester {
 				+ "comparePerimeter(Shape rhs)\n");
 	
 		System.out.println("Each shape uses and implements the functions listed above.\n"
-				+ "However, the only ones that will be able to prove polymorphism are "
+				+ "However, the only ones that are best suited to prove polymorphism are "
 				+ "compareArea and comparePerimeter.\n");
 		
 		System.out.println("CompareArea and comparePerimeter enable "
@@ -79,13 +79,13 @@ public class ShapeTester {
 				+ "It should be pointed out that most interface methods are public and abstract, "
 				+ "meaning they cannot be implemented in the interface.\n"
 				+ "This means that the classes implementing the interface "
-				+ "must provide their own implementations of methods like compareArea.\n");
+				+ "must provide their own implementations of any methods.\n");
 		
 		System.out.println("In the example above, Circle's compareArea() implementation was used "
 				+ "since it was the one who called the function.\n"
 				+ "Let's try the same comparison, but using Rectangle's compareArea instead.\n");
 		
-		System.out.println("The code called is \'Rectangle1.compareArea(Circle1);'\n");
+		System.out.println("The code called is \'Rectangle1.compareArea(Circle1);\'\n");
 		
 		Rectangle1.compareArea(Circle1); //COMPARE AREA OF RECTANGLE TO AREA OF CIRCLE
 		//NOTE: Results automatically printed from compareArea method.
