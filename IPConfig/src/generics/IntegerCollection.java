@@ -9,11 +9,12 @@ package generics;
  * values by directly using {@link Collection#min()} & {@link Collection#max()}.
  * <p>
  * NOTE: No specific implementation for min() and max() is needed in this class 
- * because it is implemented as a generic method in {@link Collection}
+ * because it is implemented as a generic method in {@link Collection}. This qualifies as code reuse.
  * @author Dalton
  *
  */
-public class IntegerCollection extends Collection<Integer> {
+public class IntegerCollection extends Collection<Integer> { 
+	//T cannot be used because it cannot be resolved to a type. A SPECIFIC type must be chosen.
 	
 	/**
 	 * Numeric identifier used for output in {@link #printCollection()}.

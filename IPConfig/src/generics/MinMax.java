@@ -7,8 +7,9 @@ package generics;
  * By extending Comparable we have an upper bound that
  * ensures our types are always capable of being compared.
  * <p>
- * This interface's purpose is to facilitate the use of the min() and max() functions, 
- * which will return the minimum and maximum value of a given set of objects.
+ * This generic interface's purpose is to facilitate the use of the min() and max() functions, 
+ * which will return the minimum and maximum value of a given set of objects. The type of these
+ * objects is unknown until compile time.
  * 
  * @author Dalton
  *
