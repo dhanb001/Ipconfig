@@ -1,12 +1,13 @@
 package shapes;
 
 /**This is the driver for the shapes package. We will use this to test the
- * polymorphism between our 3 shapes, Circle, Rectangle, and Square.
+ * polymorphism between our 3 shapes, {@linkplain shapes.Circle}, 
+ * {@linkplain shapes.Rectangle}, and {@linkplain shapes.Square}.
  * <p>
- * The shapes will be compared by Area and Perimeter within this class.
+ * The shapes will be compared using the implemented versions of {@linkplain shapes.Shape#compareArea(Shape)}
+ * and {@linkplain shapes.Shape#comparePerimeter(Shape)}
  * <p>
- * We will use and implement comparison methods set forth by the Shape interface 
- * to demonstrate polymorphism. 
+ * The implemented versions of the compare methods will demonstrate Polymorphism.
  * 
  * @author Dalton
  *
