@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"divisor"},{"l":"generics"},{"l":"objectcomparison"},{"l":"shapes"}]
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"divisor"},{"l":"gcdfail"},{"l":"generics"},{"l":"objectcomparison"},{"l":"shapes"}]
