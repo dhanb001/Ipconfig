@@ -12,8 +12,8 @@ package generics;
  * NOTE: Because this class is abstract, and non-generic classes require an explicit
  * type to be invoked, the extending classes specify the type used within them. 
  * <p>
- * Collections of type Double are created using {@link DoubleCollection} &
- * Collections of type Integer are created using {@link IntegerCollection}.
+ * Collections of type Double are created using {@link DoubleCollection} and
+ * collections of type Integer are created using {@link IntegerCollection}.
  * @author Dalton
  *
  * @param <T> The placeholder for the actual type that will be determined when a Collection is created.
@@ -45,7 +45,7 @@ abstract class Collection<T extends Comparable<T>> implements MinMax<T> {
 	 * This method prints the contents of the invoked set to console.
 	 * <p>
 	 * This method is implemented in {@link IntegerCollection#printCollection()}
-	 * & {@link DoubleCollection#printCollection()}
+	 * and {@link DoubleCollection#printCollection()}
 	 * <p>
 	 * Because this method is abstract, the extending classes MUST implement it.
 	 */
@@ -56,7 +56,7 @@ abstract class Collection<T extends Comparable<T>> implements MinMax<T> {
 	 * {@inheritDoc}
 	 * <p>NOTE: Due to the generic method being in {@link MinMax}, a type for
 	 * T did not need to be defined. 
-	 * This allows the method to be used in {@link IntegerCollection} & {@link DoubleCollection} 
+	 * This allows the method to be used in {@link IntegerCollection} and {@link DoubleCollection} 
 	 * without creating new methods in those classes.
 	 * <p>
 	 * This demonstrates code reuse.
@@ -77,7 +77,7 @@ abstract class Collection<T extends Comparable<T>> implements MinMax<T> {
 	 * {@inheritDoc}
 	 * <p>NOTE: Due to the generic method being in {@link MinMax}, a type for
 	 * T did not need to be defined. 
-	 * This allows the method to be used in {@link IntegerCollection} & {@link DoubleCollection} 
+	 * This allows the method to be used in {@link IntegerCollection} and {@link DoubleCollection} 
 	 * without creating new methods in those classes.
 	 * <p>
 	 * This demonstrates code reuse.

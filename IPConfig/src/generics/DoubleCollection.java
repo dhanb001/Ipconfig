@@ -5,7 +5,7 @@ package generics;
  * {@link Collection}.
  * <p>
  * This class holds double objects and is able to print the minimum and maximum
- * values by directly using {@link Collection#min()} & {@link Collection#max()}.
+ * values by directly using {@link Collection#min()} and {@link Collection#max()}.
  * <p>
  * NOTE: No specific implementation for min() and max() is needed in this class 
  * because it is implemented as a generic method in {@link Collection}

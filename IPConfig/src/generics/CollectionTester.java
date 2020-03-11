@@ -3,15 +3,15 @@ package generics;
 /**
  * This class is the driver for our Collection classes.
  * <p>
- * The classes that are actually invoked here are {@link IntegerCollection}, 
- * {@link DoubleCollection}, & {@link Collection}
+ * The classes that are actually invoked here are {@link generics.IntegerCollection}, 
+ * {@link DoubleCollection}, and {@link Collection}
  * @author Dalton
  *
  */
 public class CollectionTester {
 	/**
 	 * Main/Driver function for generics package
-	 * @param args
+	 * @param args Main method
 	 */
 	public static void main(String args[]) {
 		

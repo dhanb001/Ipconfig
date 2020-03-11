@@ -1,173 +1,5 @@
-/**
- * This Book class is a collection of book-related data values 
- * (i.e. Title, Author and Number of Pages),
- *  allowing the author to demonstrate object comparison.
- *  <p>
- *  The data values inside of this class are private, 
- *  allowing access only through getter methods.
- *
- * 
- * @author Dalton
- *
- */
-class Book {
-		
-	//Declaration of private Book Variables
-	
-	/**
-	 * String representation of book's title
-	 */
-	private String title;
-	
-	/**
-	 * String representation of book's author
-	 */
-	private String author; 
-	
-	/**
-	 * Number of pages in book
-	 */
-	private int numPages;
-		
-
-	
-	/**This is the non-default book constructor,
-	 * <p>
-	 * This constructor takes the following data parameters and creates a book object
-	 * 
-	 * @param bookTitle Parameter for the title of the book
-	 * @param bookAuthor Parameter for the author of the book
-	 * @param pageNum Parameter for the number of pages found in the book
-	 * 
-	 */
-	
-	public Book(String bookTitle, String bookAuthor, int pageNum) {
-		
-		//Private variables initialized here, using constructor input
-		title = bookTitle;
-		
-		author = bookAuthor;
-		
-		numPages = pageNum;
-		
-		///END CONSTRUCTOR
-	}
-
-	///GETTER METHODS
-	
-
-	/** Returns the title of associated Book object
-	 * 
-	 * @return (String) Title of Book
-	 */
-	String getTitle() {
-		return title;
-	}
-	
-	/** Returns the author of associated Book object
-	 * 
-	 * @return (String) Author of Book
-	 */
-	String getAuthor() {
-		return author;
-	}
-	
-	/** Returns the number of pages in the associated Book object
-	 * 
-	 * @return Integer representation of pages in book
-	 */
-	int getNumPages() {
-		return numPages;
-	}
-	
-	/** Takes a String parameter and sets a new title for the Book object
-	 * 
-	 * @param nextTitle The String that will become the new title
-	 */
-	void setTitle(String newTitle) {
-		this.title = newTitle; //Replaces current title with parameter
-	}
-	
-	/** Takes a String parameter and sets a new author for the Book object
-	 * 
-	 * @param nextTitle The String that will become the new author
-	 */
-	void setAuthor(String newAuthor) {
-		this.author = newAuthor; //Replaces current author with parameter
-	}
-	/** Takes an integer parameter and sets a new number of pages for the Book object
-	 * 
-	 * @param newPages The integer value that will become the new number of pages
-	 */
-	void setNumPages(int newPages) {
-		this.numPages = newPages; //Replaces current number of pages with parameter
-	}
-	
-
-	
-	/** Overload of the toString method, allowing printing of Book objects in console
-	 * <p>
-	 * The values that will be printed are as follows:
-	 * <p>Name + Author + Page Count 
-	 * @return String representation of a book object
-	 */
-	@Override
-	public String toString() {
-		return ("Title: "+this.title +"\tAuthor: "+this.author
-				+"\tNumber of Pages: "+this.numPages);
-	}
-	
-	/**Overload of the equals method, allowing us to compare two books by value
-	 * <p>
-	 * NOTE: This function will print out where the values did not match
-	 * 
-	 * @param b The Book object being compared
-	 * @return Boolean representing whether the books are equal
-	 */
-	public boolean equals(Book b) {
-		boolean status = false; //Default to false, true only if all values match
-		
-		/*Compare values of two book objects,
-		 * using getter methods and nested if statements.
-		 * 
-		 * NOTE: Else statements are only for identifying where values didn't match
-		 */
-		System.out.println("Comparing titles...");
-		if (this.getTitle().equals(b.getTitle())) { //Compare Strings using .equals
-			System.out.println("Titles match! Comparing authors...");
-			if (this.getAuthor().equals(b.getAuthor())) {
-				System.out.println("Authors match! Comparing number of pages...");
-				if(this.getNumPages()==b.getNumPages()) { //Compare integers using ==
-					System.out.println("Number of Pages Match!");
-					status = true; //Change status to true iff all values match
-				}
-				else { //Print statement if number of pages did not match
-					System.out.println("Number of pages did not match.");
-				}
-			}
-			else { //Print statement if authors did not match
-				System.out.println("Authors did not match.");
-			}
-		}
-		else {//Print statement if titles did not match
-			System.out.println("Titles did not match.");
-		}
-		
-		//Check if the status is true
-		if(status==true) { //Print success statement if status==true
-			System.out.println("Therefore, the books match when compared by value!");
-		}
-		else {//Print failure statement if status==false
-			System.out.println("Therefore, the books do not match when compared by value!");
-		}
-			
-		
-		return status; //Return the boolean value
-	}
-	
-	
-}
-/** This class creates book objects and compares them, it functions as a driver
+package objectcomparison;
+/** This class creates book objects and compares them, it functions as a driver for {@link Book}
  * 
  * @author Dalton
  *
@@ -203,27 +35,27 @@ class BookCompare {
 				+ "we can now begin comparing the instances of this class.\n"
 				+ "In order to accomplish comparison by value, "
 				+ "the default equals() method must be overloaded.\n\n"
-				+ "The overloaded equals() method will return true if and only if "
+				+ "The now-overloaded equals() method will return true if and only if "
 				+ "the books are identical, i.e. all the values are the same.\n");
 		
 		System.out.println("We will now compare two instances of our book class.\n"
 				+ "The first book and the second book will be compared using "
-				+ "the equals() method defined in the Book class.\n"
+				+ "the equals() method defined in the Book class.\n\n"
 				+ "Because the two books have identical values, "
 				+ "they will match when we compare them by value.\n");
 		
-		System.out.println("Result = " +firstBook.equals(secondBook) + "<-"
+		System.out.println("Result = " +firstBook.equals(secondBook) + " <-"
 				+ "(Output from the Book equals() method)\n");
 		
 		System.out.println("We will now demonstrate that the equals() method"
 				+ " within Book can actually detect mistakes.\n"
 				+ "To do so, we will compare the first book to the third book.\n"
-				+ "This will help demonstrate the validity of the overloaded method.\n");
+				+ "This will demonstrate the validity of the overloaded method.\n");
 		
 		System.out.println("Book one:\n"+firstBook + "\n");
 		System.out.println("Book three:\n"+thirdBook + "\n");
 		
-		System.out.println("Result = "+firstBook.equals(thirdBook) + "<-"
+		System.out.println("Result = "+firstBook.equals(thirdBook) + " <-"
 				+ "(Output from the Book equals() method)\n");
 		
 		System.out.println("In order to save space, and to test all of the checks, "
@@ -236,7 +68,7 @@ class BookCompare {
 		System.out.println("Now we will compare the first book to the third book again."
 				+ "This time the titles will be equal, but the other values will differ.\n");
 		
-		System.out.println("Result = "+firstBook.equals(thirdBook) + "<-"
+		System.out.println("Result = "+firstBook.equals(thirdBook) + " <-"
 				+ "(Output from the Book equals() method)\n");
 		
 		System.out.println("As you can see, we successfully compared the titles, only receiving an error statement for the authors.\n"
@@ -250,7 +82,7 @@ class BookCompare {
 		System.out.println("Now we will compare the first book to the third book for a final time."
 				+ "This time the titles and the authors will be equal.\n");
 		
-		System.out.println("Result = "+firstBook.equals(thirdBook) + "<-"
+		System.out.println("Result = "+firstBook.equals(thirdBook) + " <-"
 				+ "(Output from the Book equals() method)\n"); 
 		
 		System.out.println("Now that we have proven the validity of our overloaded equals() method,"
@@ -274,7 +106,7 @@ class BookCompare {
 		
 		System.out.println("\nAs you can see above, even though the two book objects "
 				+ "have the same values, they don't point to the same memory address.\n"
-				+ "Therefore comparing by reference isn't useful when comparing unique objects.");
+				+ "Therefore comparing by reference isn't useful when comparing unique objects.\n");
 		
 		
 		System.out.println("Now, we will demonstrate when comparison by reference is useful.\n"
@@ -298,10 +130,10 @@ class BookCompare {
 				+ "Result = " + (fourthBook == firstBook));
 		
 		System.out.println("\nThus, comparison of instances of a class by reference"
-				+ " and value has been demonstrated.\n"
-				+ "An equals() function was defined for book, and successfully used,"
+				+ " and by value has been demonstrated.\n"
+				+ "An equals() function was defined for book, and successfully used, "
 				+ "demonstrating comparison by value.\n"
-				+ "To demonstrate comparison by value, the default == operator was used.\n "
+				+ "To demonstrate comparison by reference, the default == operator was used.\n"
 				+ "The == operator checked if memory address locations/object references matched.\n");
 		
 		System.out.print("Please run the program and read through the entire console output for a "

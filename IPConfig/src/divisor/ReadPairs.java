@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 /**
  * This class will take a file and read the integers inside it, 
- * creating an {@link IntPair} ArrayList that will be used in {@link PairThread}
+ * creating an {@link IntPair} ArrayList that will be used in {@link GreatestDivisor}
  * <p>
  * The only method that can be called externally is {@link createPairs}.
  * <p>
@@ -30,17 +30,20 @@ public class ReadPairs {
 		ArrayList<Integer> result = new ArrayList<Integer>();//Instantiate result
 		//result = createInts(f);
 		
-		result = createInts(f); //Call method to add integer values to result
+		result = createInts(f); //ArrayList result will equal the ArrayList returned from createInts
+		//Jump to createInts to follow (line #63)
 		
+
 		ArrayList<IntPair> pairList = new ArrayList<>(); //Create ArrayList of IntPairs
 		
-		for (int i = 0; i<result.size()/2; i++)
+		//Using result.size()/2 allows for uniform IntPair creation by adding both Integers at once.
+		for (int i = 0; i<result.size()/2; i++) //Set loop counter to 0, and set condition to ArrayList size/2
 		{
-			if(i == 0) {
-				pairList.add(new IntPair(result.get((i)),result.get((i+1)),i+1));
+			if(i == 0) { //when i == 0, take Integer in index(0) and index (1) and place in pairList, set ID to 1
+				pairList.add(new IntPair(result.get((0)),result.get((1)),1));
 			}
-			else {
-			 pairList.add(new IntPair(result.get((i*2)),result.get((i*2+1)),i+1));
+			else { //when i > 0, take Integer in index (i*2) and index (i*2+1) and place in pairList, set ID to i+1
+			 pairList.add(new IntPair(result.get((i*2)),result.get((i*2+1)),i+1)); 
 			}
 		}
 		
@@ -76,5 +79,6 @@ public class ReadPairs {
 	    
 	    //Method is finished, return intList
 	    return intList;
+	    //Now return to createPairs() (line #37)
 	}
 }

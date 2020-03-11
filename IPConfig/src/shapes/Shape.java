@@ -17,15 +17,14 @@ interface Shape {
 	 */
 	final double pi = 3.1415; 
 	
-	/**This function is responsible for retrieving the perimeter of the given shape.
-	 * <p>
-	 * This function will return the double representation of the perimeter.
+	/**This getter function is responsible for retrieving the perimeter of the given shape.
+	 *@return The double representation of the perimeter.
 	 */
 	double getPerimeter();
 	
-	/**This function is responsible for retrieving the area of the given shape.
-	 * <p>
-	 * This function will return the double representation of the area.
+	/**
+	 * This getter function is responsible for retrieving the area of the given shape.
+	 * @return The double representation of the area.
 	 */
 	double getArea();
 	

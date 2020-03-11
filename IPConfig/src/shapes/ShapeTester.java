@@ -16,7 +16,7 @@ public class ShapeTester {
 	
 	/**
 	 * The main method/driver function for the shapes package
-	 * @param args
+	 * @param args Main method
 	 */
 	public static void main(String args[]) {
 		System.out.println("According to Oracle's definition of polymorphism:\n"

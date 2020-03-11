@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="private" author="true" classpath="." destdir="doc" doctitle="JavaDoc for IPConfigure Java Program Evaluation" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" packagenames="divisor,objectcomparison,shapes,generics,gcdfail" source="12" sourcepath="." splitindex="true" use="true" version="true"/>
+    </target>
+</project>
