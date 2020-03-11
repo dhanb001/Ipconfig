@@ -71,3 +71,107 @@ And if you open the folders, they should look like:
 
 
 Now we just need to run the projects.
+
+But first, we'll go over how to access the JavaDocs for these projects.
+
+## JavaDoc Access
+
+Accessing the JavaDocs in Eclipse is fairly simple and only takes a few steps.
+
+1. Open the *doc* package under the src folder.
+2. Select *allclasses-index.html* and open it.\
+![Open this for Javadocs](IPConfig/toopenjavadocs.PNG)
+
+
+3. Once you have opened allclasses, your screen should look like this:\
+![Should look like](IPConfig/fancyjavadoc.PNG)
+
+
+
+4. The JavaDoc is now open, and you can browse freely throughout the documentation. If you'd like to see an overview, 
+select overview from the upper bar.\
+![Overview of JavaDoc](IPConfig/overview.PNG)
+
+
+Now you have access to the JavaDoc files, feel free to navigate around as much as you like and examine the documentation.
+
+## Programming Questions
+
+The 4 programming questions were answered in individual packages for easy separation.
+
+1. Inheritance- **shapes** package.
+
+
+2. Generics- **generics** package.
+
+
+3. Object Comparison- **objectcomparison** package.
+
+
+4. Greatest Common Divisor- **divisor** package.\
+NOTE: The gcdfail package was my first (failed) attempt to solve question 4, use it to see my thought process.
+
+### Inheritance
+For this question, navigate to the shapes package and open *Shapetester.java*\
+![Run shapetester](IPConfig/rightclickandrunas.PNG)
+
+
+To run this program, right click on *ShapeTester.java* and select **run as.** Then select *Java Application.*
+
+
+This program's console output runs through a thorough demonstration of the question.
+If you would like to view it, start from the beginning of the console output and read until the end.
+
+
+All other classes for this question can be found in the shapes package.
+
+
+
+### Generics
+For this question, navigate to the generics package and open *CollectionTester.java*\
+![Collection Tester](IPConfig/collectiontest.PNG)
+
+
+To run this program, right click on *CollectionTester.java* and select **run as.** Then select *Java Application.*
+
+
+This program's console output runs through a thorough demonstration of the question.
+If you would like to view it, start from the beginning of the console output and read until the end.
+
+
+All other classes for this question can be found in the generics package.
+
+
+
+### Object Comparison
+For this question, navigate to the objectcomparison package and open *BookCompare.java*\
+![Book Compare](IPConfig/bookcompare.PNG)
+
+
+To run this program, right click on *BookCompare.java* and select **run as.** Then select *Java Application.*
+
+
+This program's console output runs through a thorough demonstration of the question.
+If you would like to view it, start from the beginning of the console output and read until the end.
+
+
+The other classes for this question can be found in the objectcomparison package.
+
+
+
+### Greatest Common Divisor
+For this question, navigate to the divisor package and open *GreatestDivisor.java*\
+![Greatest Divisor](IPConfig/greatestdivisor.PNG)
+
+
+To run this program, right click on *GreatestDivisor.java* and select **run as.** Then select *Java Application.*
+
+
+This program's console output **does not run through a thorough demonstration of the question.**\
+Careful examination of the code in all .java files in this package is required for this question. However, comments are frequent and the code is fairly easy to follow.
+
+The other classes for this question, and the text file used for input can be found in the divisor package.
+
+## Developer Diary
+
+  First, I would like to say that these questions have been extremely helpful in my learning of Java. I thought I knew a fairly large amount, but these questions forced me to teach myself much more than I thought necessary. However, I used my copy of Oracle's *Java The Complete Reference Ninth Edition* to teach myself the necessary concepts and strategies in order to complete these questions. I have learned more from these assignments than I have learned in a single semester in the classroom.
