@@ -1,6 +1,20 @@
 # IPConfigure Java Programming Evaluation
 
-### Access Instructions
+### Table Of Contents
+
+1. **Access Instructions**
+2. **Download Instructions**\
+  2a. Cloning the Repository in Eclipse\
+  2b. Accessing the Repository in Eclipse
+3. **JavaDoc Access**
+4. **Programming Questions**\
+  4a. Inheritance\
+  4b. Generics\
+  4c. Object Comparison\
+  4d. Greatest Common Divisor
+5. **Developer Diary**
+
+## Access Instructions
 
 In order to access the java files I have created, it is **highly** recommended that you use an Eclipse IDE.\
 The files in this project were created using Eclipse. Eclipse auto-builds files and projects, meaning build scripts aren't necessary
@@ -111,7 +125,7 @@ The 4 programming questions were answered in individual packages for easy separa
 4. Greatest Common Divisor- **divisor** package.\
 NOTE: The gcdfail package was my first (failed) attempt to solve question 4, use it to see my thought process.
 
-### Inheritance
+### 1) Inheritance
 For this question, navigate to the shapes package and open *Shapetester.java*\
 ![Run shapetester](IPConfig/rightclickandrunas.PNG)
 
@@ -127,7 +141,7 @@ All other classes for this question can be found in the shapes package.
 
 
 
-### Generics
+### 2) Generics
 For this question, navigate to the generics package and open *CollectionTester.java*\
 ![Collection Tester](IPConfig/collectiontest.PNG)
 
@@ -143,7 +157,7 @@ All other classes for this question can be found in the generics package.
 
 
 
-### Object Comparison
+### 3) Object Comparison
 For this question, navigate to the objectcomparison package and open *BookCompare.java*\
 ![Book Compare](IPConfig/bookcompare.PNG)
 
@@ -159,7 +173,7 @@ The other classes for this question can be found in the objectcomparison package
 
 
 
-### Greatest Common Divisor
+### 4) Greatest Common Divisor
 For this question, navigate to the divisor package and open *GreatestDivisor.java*\
 ![Greatest Divisor](IPConfig/greatestdivisor.PNG)
 
@@ -175,3 +189,6 @@ The other classes for this question, and the text file used for input can be fou
 ## Developer Diary
 
   First, I would like to say that these questions have been extremely helpful in my learning of Java. I thought I knew a fairly large amount, but these questions forced me to teach myself much more than I thought necessary. However, I used my copy of Oracle's *Java The Complete Reference Ninth Edition* to teach myself the necessary concepts and strategies in order to complete these questions. I have learned more from these assignments than I have learned in a single semester in the classroom.
+
+
+  Regarding the individual questions, I started with the 3rd prompt on Object Comparison. I originally had everything for the prompt in a **Single** class. It worked fine but it showed my ineptitude when starting the project. I came back and divided the class into the BookCompare driver and the Book class. The change was simple, but it massively improved readability.
