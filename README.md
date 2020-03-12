@@ -36,19 +36,33 @@ Once you have the clone URL. Open your Eclipse IDE
 
 ### Cloning the repository in Eclipse
 
-1. Go to your workbench in Eclipse.
+1. Go to your workbench in Eclipse.\
 2. Click the Quick Access box in the upper right corner and type in *"Clone a github repository"*
 ![Quick Access](IPConfig/quickaccess.PNG)
+
+
 3. Select Clone a github repository.
+
+
 4. Once selected, this should appear:
 ![Clone Repository Box](IPConfig/clonegitrepository.PNG)
+
+
 5. Now, place the clone URL from github into the top box titled URI.
+
+
 6. Once you have entered the URL, enter your Github User and Password below.
-![Entered URL and Credentials](IPConfig/enterurlanduserid.PNG)
+![Entered URL and Credentials](IPConfig/enterurlanduserid.PNG)\
 Once your screen looks similar to this, press **next.**
+
+
 7. Now select a local directory to store the cloned project. **Be sure to remember the location you stored it.**
 ![Find a local directory to store](IPConfig/nowselectnext.PNG)
+
+
 8. Now press **Finish.**
+
+
 
 ### Accessing the Repository
 
