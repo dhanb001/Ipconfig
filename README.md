@@ -74,7 +74,7 @@ You've successfully cloned the repository, but you still need to access it in yo
 There's a few steps we need to take to accomplish that.
 
 
-1. Go to the quick access box in the corner, and type in *"Open Projects from File System"
+1. Go to the quick access box in the corner, and type *"Open Projects from File System"*
 ![Quick Access](IPConfig/quickaccess.PNG)
 
 
@@ -97,12 +97,16 @@ And select the folder named IPConfig.
 You're done!
 
 
-Now your screen should look like this:\
+Now your screen should look like this:
+
+
 ![No opened folders](IPConfig/itshouldbethere.PNG)
 
 
 
 And if you open the folders, they should look like:
+
+
 ![Opened folders](IPConfig/whattheyshouldlooklike.PNG)
 
 
