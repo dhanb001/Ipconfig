@@ -36,7 +36,7 @@ Once you have the clone URL. Open your Eclipse IDE
 
 ### Cloning the repository in Eclipse
 
-1. Go to your workbench in Eclipse.\
+1. Go to your workbench in Eclipse.
 2. Click the Quick Access box in the upper right corner and type in *"Clone a github repository"*
 ![Quick Access](IPConfig/quickaccess.PNG)
 
@@ -67,7 +67,10 @@ Once your screen looks similar to this, press **next.**
 ### Accessing the Repository
 
 You've successfully cloned the repository, but you still need to access it in your workspace.
-![Where's my repository?](IPConfig/needtoimport.PNG)\
+![Where's my repository?](IPConfig/needtoimport.PNG)
+
+
+
 There's a few steps we need to take to accomplish that.
 
 
@@ -75,13 +78,16 @@ There's a few steps we need to take to accomplish that.
 ![Quick Access](IPConfig/quickaccess.PNG)
 
 
+
 2. Once you've opened the quick access tab, you should see this.
 ![Open from file system](IPConfig/openfromfilesystem.PNG)
+
 
 
 3. Now, navigate to the directory where you stored the repository.
 ![The repository location](IPConfig/selectthisfolder.PNG)
 And select the folder named IPConfig.
+
 
 
 4. Now just press **finish.**
@@ -90,12 +96,15 @@ And select the folder named IPConfig.
 
 You're done!
 
+
 Now your screen should look like this:\
 ![No opened folders](IPConfig/itshouldbethere.PNG)
 
 
+
 And if you open the folders, they should look like:
 ![Opened folders](IPConfig/whattheyshouldlooklike.PNG)
+
 
 
 Now we just need to run the projects.
@@ -107,18 +116,26 @@ But first, we'll go over how to access the JavaDocs for these projects.
 Accessing the JavaDocs in Eclipse is fairly simple and only takes a few steps.
 
 1. Open the *doc* package under the src folder.
-2. Select *allclasses-index.html* and open it.\
+
+
+2. Select *allclasses-index.html* and open it.
 ![Open this for Javadocs](IPConfig/toopenjavadocs.PNG)
 
 
-3. Once you have opened allclasses, your screen should look like this:\
+
+3. Once you have opened allclasses, your screen should look like this:
+
+
 ![Should look like](IPConfig/fancyjavadoc.PNG)
 
 
 
 4. The JavaDoc is now open, and you can browse freely throughout the documentation. If you'd like to see an overview, 
-select overview from the upper bar.\
+select overview from the upper bar.
+
+
 ![Overview of JavaDoc](IPConfig/overview.PNG)
+
 
 
 Now you have access to the JavaDoc files, feel free to navigate around as much as you like and examine the documentation.
@@ -214,4 +231,8 @@ The other classes for this question, and the text file used for input can be fou
   The last question was Question 4, which covered Greatest Common Divisor. This question was the most difficult by far. I had only heard of lambdas prior to this point, and had never seen or used them in my ODU courses. I referenced my book to find out more and I learned quite a bit about them. They were actually pretty easy and useful once I understood them. However, the real problem came when it was time to integrate lambdas with threads. I knew nothing about threads, and had to learn about them entirely online. I managed to find some good resources that helped me get a running base going. Everything I learned, and the thought process I went through can be seen in the *gcdfail* package. The *gcdfail* package was a very uncoordinated and unplanned attempt to solve the problem. The lack of cohesion and consistency is obvious if you look at the program, and this forced me to re-do everything. The result of re-doing everything is the *divisor* package. The *divisor* package is a much more concise, refined approach to the GCD prompt and it is much easier to follow than *gcdfail*. I incorporated the formulas, certain snippets, and any other useful information from *gcdfail* into my finalized *divisor* class. Overall, I'm happy with the way *divisor* turned out, and I hope it does a good job of explaining the concepts.
   
   
-  I'd like to thank you all for giving me the chance to prove myself and take part in an awesome learning experience. These questions and the process as a whole has taught me much more about the Computer Science field than any of my courses. Thank you all.
+  I'd like to thank you all for giving me the chance to prove myself and take part in an awesome learning experience. These questions and the process as a whole has taught me much more about the Computer Science field than any of my courses. Thank you all for your time, and I hope you didn't find this project TOO ridiculously long.
+  
+  
+  
+But I will say, **my thoroughness was intentional.**
